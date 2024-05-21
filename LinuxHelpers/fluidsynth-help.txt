@@ -1,0 +1,8 @@
+// start fluidsynth
+systemctl --user start fluidsynth
+
+// aconnect
+aconnectgui
+
+Keystation 88 MIDI 1 	>>OUT>>
+Synth input port 	<<IN<<a

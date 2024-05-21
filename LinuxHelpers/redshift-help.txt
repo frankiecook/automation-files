@@ -1,0 +1,6 @@
+// set light level from command line
+redshift -O 3500
+
+// configuration file for permenant changes
+sudo nano ~/.config/redshift.conf
+
