@@ -1,0 +1,67 @@
+// not using ngrok anymore, becuase it is too expensive
+// start playit
+./playit or playit
+
+// start vanilla minecraft server
+java -Xmx6144M -Xms1024M -jar server.jar nogui
+
+// start bukkit minecraft server
+java -Xmx6144M -Xms1024M -jar bukkitserver.jar nogui
+
+// start paper minecraft server
+java -Xmx6144M -Xms1024M -jar paper-1.16.5-467.jar nogui
+
+// open ngrok
+./ngrok
+
+// establish TCP
+./ngrok tcp 25565
+
+// open .jar file
+java -jar <FILENAME>
+
+// java version
+java -version
+
+// change java version
+sudo update-alternatives --config java
+
+// check the server usage
+/serverreport
+
+// audio jack not working
+pulseaudio --kill
+pulseaudio --start
+
+// uninstall applications
+sudo apt-get --purge remove *appname*
+
+// swap between GUI and non-GUI 
+# sudo systemctl isolate multi-user.target
+# sudo systemctl isolate graphical.target
+
+// use a program called xdotool in order to execute keyboard input into a terminal
+xdotool key ctrl+shift+t
+// using xdotools and / or gnome to create and control terminal windows and tabs is more for graphical users. For better control in an ssh environment I need to use screen or tmux.
+// I am using screen
+// how to start a screen session
+screen
+// how to list all commands
+ctrl + a, followed by ?
+// how to create screens that run simultaneously 
+ctrl + a, followed by c
+// how to cycle between these screens
+ctrl + a, followed by n
+// closing screens
+exit
+// how to detach a session when running commands
+screen -dm ./run_my_program
+// how to add a custom name to a session
+screen -S "Name" ./run_my_program
+// reattach to a screen
+screen -r id_number
+
+// Lowering grahpics of GUI
+// I installed CompizConfig and gnome-tweaks
+// compizconfig is very complicated and potentially hazardous to the system if used wrong. I also don't have all the settings I see from other people's screenshots and videos.
+

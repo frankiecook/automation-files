@@ -1,0 +1,56 @@
+// updates the repository cache
+sudo apt update
+
+// search for a specific package
+apt search <keyword>
+
+// install package
+sudo apt install <packagename>
+
+// remove packages
+sudo apt remove cowsay
+
+// remove a package and remove all configurations
+sudo apt remove --purge cowsay
+
+
+// add a new user
+sudo adduser <username>
+
+// remove a user
+// this does not remove the user's home directory
+sudo userdel jdoe
+
+// remove the home director
+sudo rm -r /home/<username>
+
+// upgrade
+sudo apt upgrade
+sudo apt dist-upgrade
+
+
+
+// check status of a program
+systemctl status apache2
+
+// stop a running program
+sudo systemctl stop apache2
+
+// disable or enable apache
+sudo systemctl [enable/disable] apache2
+
+
+
+// history of commands
+history
+
+// active ports
+netstat -a | more
+
+// stop an application
+sudo service apache2 stop
+
+// access control center
+gnome-control-center
+
+

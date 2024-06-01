@@ -1,0 +1,8 @@
+Check open ports using Network Mapper (nmap)
+Command: sudo nmap -sT -O localhost
+
+Use a DNS service to hide your ip address
+Command: ping example.com
+
+Firewall Rules
+
