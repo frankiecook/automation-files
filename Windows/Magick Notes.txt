@@ -1,0 +1,26 @@
+General Image Notes
+-Video Game Save Formate: Title-In-Caps-002.png
+
+Image Magick
+-use website for command info: https://imagemagick.org/script/command-line-processing.php#geometry
+
+Monitor Sizes
+- Monitor 1: 1920x1080
+- Monitor 2: 2560x1080
+
+Pixel 3A Screenshot
+- Size: 270x555
+
+SNES Screenshot Cropping
+-Aspect Ratio 8:7
+-Height of image = Height of SNES output
+-command given both my monitors are in screenshot (1980x720 / ultrawide)
+	magick convert "Screenshot (54).png" -gravity West -crop 1234x1080+2583+0 earthbound54.png
+-Just monitor two (ultrawide)
+	magick convert "Screenshot (57).png" -gravity West -crop 1234x1080+658+0 earthbound57.png
+
+Game Boy / Game Boy Color
+-Aspect Ratio 10:9
+-from android screenshots (Pixel 3A)
+	magick convert 688.jpg -gravity West -crop 270x243+0-116 gold688.png
+
